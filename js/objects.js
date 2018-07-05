@@ -9,13 +9,19 @@ class GameObjects {
   }
 }
 
-// Create Player from GameObjects
+/*
+Create Player from GameObjects
+*/
 class Player extends GameObjects {
-  super();
-  this.sprite += 'char-boy.png';
+  constructor() {
+    super();
+    this.sprite += 'char-boy.png';
+  }
 }
 
-// create Enemy from GameObjects
+/*
+Create Enemy from GameObjects
+*/
 class Enemy extends GameObjects {
   constructor() {
     super();

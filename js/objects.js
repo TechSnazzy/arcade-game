@@ -45,4 +45,9 @@ class Enemy extends GameObjects {
     this.x = x;
     this.y = y;
   }
+
+  update(dt) {
+    super.update();
+    this.offScreenX ? this.x = -1 : this.x += dt;
+  }
 }

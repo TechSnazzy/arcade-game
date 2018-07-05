@@ -8,6 +8,7 @@ class GameObjects {
     this.y = 5;
     this.spriteOffsetX = 101;
     this.spriteOffsetY = 83;
+    this.gameTile = 1;
   }
 
   update(dt) {
@@ -28,6 +29,25 @@ class Player extends GameObjects {
     super();
     this.sprite += 'char-boy.png';
     this.moving = false;
+  }
+
+  handleInput(input) {
+    switch (input) {
+      case 'left':
+        this.x = this.x > 0 ? this.x - this.gameTile : this.x;
+        break;
+      case 'up':
+        this.y = this.y > 0 ? this.y - this.gameTile : this.y;
+        break;
+      case 'right':
+        this.x = this.x < 4 ? this.x + this.gameTile : this.x;
+        break;
+      case 'down':
+        this.y = this.y < 5 ? this.y + this.gameTile : this.y;
+        break;
+      default:
+        break;
+    }
   }
 
   render() {

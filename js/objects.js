@@ -6,10 +6,17 @@ class GameObjects {
     this.sprite = 'images/';
     this.x = 2;
     this.y = 5;
+    this.spriteOffsetX = 101;
+    this.spriteOffsetY = 83;
+  }
+
+  update(dt) {
+    this.offScreenX = this.x > 5;
+    this.offScreenY = this.y < 1;
   }
 
   render() {
-    ctx.drawImage(Resources.get(this.sprite), this.x * 101, this.y * 83);
+    ctx.drawImage(Resources.get(this.sprite), this.x * this.spriteOffsetX, this.y * this.spriteOffsetY);
   }
 }
 

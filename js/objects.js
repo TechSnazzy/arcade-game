@@ -48,6 +48,6 @@ class Enemy extends GameObjects {
 
   update(dt) {
     super.update();
-    this.offScreenX ? this.x = -1 : this.x += dt;
+    this.offScreenX ? this.x = -1 : this.x += Math.random(dt)/8;
   }
 }

@@ -19,6 +19,16 @@ class GameObjects {
   render() {
     ctx.drawImage(Resources.get(this.sprite), this.x * this.spriteOffsetX, this.y * this.spriteOffsetY);
   }
+
+  checkCollisions(playerOrEnemy) {
+    if (this.y === playerOrEnemy.y) {
+      if (this.x >= playerOrEnemy.x - 1 && this.x <= playerOrEnemy.x + 1) {
+        return true;
+      }
+    } else {
+      return false;
+    }
+  }
 }
 
 /*

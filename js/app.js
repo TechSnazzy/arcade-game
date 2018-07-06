@@ -1,9 +1,10 @@
 const player = new Player();
-const allEnemies = [
-    new Enemy(0, 1),
-    new Enemy(0, 2),
-    new Enemy(0, 3)
-];
+let allEnemies = [];
+
+// instantiate new Enemy objects.
+for (let i = 0; i < 3; i++)  {
+  allEnemies.push(new Enemy(0,i+1));
+};
 
 document.addEventListener('keyup', function(e) {
     var allowedKeys = {

@@ -1,3 +1,4 @@
+// instantiate a new Player
 const player = new Player();
 
 // instantiate new Enemy objects.

@@ -1,6 +1,18 @@
-frontend-nanodegree-arcade-game
-===============================
+# Udacity Project 3: Arcade Game
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+## Table of Contents
+* [Game Play Instructions](#game-play-instructions)
+* [Loading the Game]()
+* [Resources](#resources)
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+### Game Play Instructions
+In this game, you will move the player across the board until the player reaches the water. You should avoid colliding with the enemy bugs. The player can move left, right, up or down using the arrow keys on the keyboard. Once the player reaches the water, they win and can choose to play again.
+
+### Loading the Game
+You can play the game online from my website at: https://techsnazzy.com/arcade-game
+
+### Resources
+* [Webinar: Arcade Game Project created by @Rodrick [FEND] - Getting Started - Zoom](https://zoom.us/recording/play/aulotDlzKFegQFIJTaTzKgWvNkVsYtlwO454vL1UPE1Cm6lOUBQCtfVurPOIAGAS?startTime=1529542978000)
+* [Project Specification: Classic Arcade Game Clone](https://review.udacity.com/#!/projects/2696458597/rubric)
+* [Frogger Game: Getting Started](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true)
+* [Code Your First Game: Arcade Classic in JavaScript](https://www.udemy.com/code-your-first-game)

@@ -39,6 +39,20 @@ class Player extends GameObjects {
     super();
     this.sprite += 'char-boy.png';
     this.moving = false;
+    this.win = false;
+  }
+
+  update() {
+    super.update();
+    if (this.offScreenY && !this.moving && !this.win) {
+      $('#game-modal').modal('show');
+      this.win = true;
+    }
+  }
+
+  render() {
+    super.render();
+    this.moving = false;
   }
 
   handleInput(input) {
@@ -58,10 +72,7 @@ class Player extends GameObjects {
       default:
         break;
     }
-  }
-
-  render() {
-    super.render();
+    this.moving = true;
   }
 }
 

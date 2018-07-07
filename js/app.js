@@ -1,7 +1,8 @@
 const player = new Player();
-let allEnemies = [];
 
 // instantiate new Enemy objects.
+let allEnemies = [];
+
 for (let i = 0; i < 3; i++)  {
   allEnemies.push(new Enemy(0,i+1));
 };

@@ -26,7 +26,11 @@ class GameObjects {
   so that we can move the player and enemy block by block.
   */
   render() {
-    ctx.drawImage(Resources.get(this.sprite), this.x * this.spriteOffsetX, this.y * this.spriteOffsetY);
+    ctx.drawImage(
+      Resources.get(this.sprite),
+      this.x * this.spriteOffsetX,
+      this.y * this.spriteOffsetY
+    );
   }
 
   /*
@@ -118,6 +122,6 @@ class Enemy extends GameObjects {
   */
   update(dt) {
     super.update();
-    this.offScreenX ? this.x = -1 : this.x += Math.random(dt)/8;
+    this.offScreenX ? (this.x = -1) : (this.x += Math.random(dt) / 8);
   }
 }

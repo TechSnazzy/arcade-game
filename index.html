@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Project 3: Arcade Game</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-  <!-- Bootstrap Modal -->
-  <div class="modal fade" id="game-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content text-center">
-        <div class="modal-body">
-          <h5 class="modal-title" id="modal-label">⭐️  CONGRATULATIONS! ⭐️</h5>
-          You won the game. Would you like to play again?
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-success" onclick="javascript:window.location.reload()">Play Again!</button>
-          <button type="button" class="btn btn-danger" data-dismiss="modal">No, Thanks!</button>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Bootstrap Modal -->
+    <div
+      class="modal fade"
+      id="game-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content text-center">
+          <div class="modal-body">
+            <h5 class="modal-title" id="modal-label">
+              ⭐️ CONGRATULATIONS! ⭐️
+            </h5>
+            You won the game. Would you like to play again?
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-success"
+              onclick="javascript:window.location.reload()"
+            >
+              Play Again!
+            </button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              No, Thanks!
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  <script src="js/resources.js"></script>
-  <script src="js/objects.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/engine.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="js/resources.js"></script>
+    <script src="js/objects.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+  </body>
 </html>

@@ -2,14 +2,14 @@
 
 ## Table of Contents
 * [Game Play Instructions](#game-play-instructions)
-* [Loading the Game]()
+* [Loading the Game](#loading-the-game)
 * [Resources](#resources)
 
 ### Game Play Instructions
 In this game, you will move the player across the board until the player reaches the water. You should avoid colliding with the enemy bugs. The player can move left, right, up or down using the arrow keys on the keyboard. Once the player reaches the water, they win and can choose to play again.
 
 ### Loading the Game
-You can play the game online from my website at: https://techsnazzy.com/arcade-game
+Play it online at: https://techsnazzy.github.io/arcade-game/
 
 ### Resources
 * [Webinar: Arcade Game Project created by @Rodrick [FEND] - Getting Started - Zoom](https://zoom.us/recording/play/aulotDlzKFegQFIJTaTzKgWvNkVsYtlwO454vL1UPE1Cm6lOUBQCtfVurPOIAGAS?startTime=1529542978000)
